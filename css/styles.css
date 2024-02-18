@@ -1,0 +1,511 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+}
+
+.main-hr{
+    top: 92.8vh;
+    display: block;
+    position: absolute;
+    z-index: 3;
+    border: none;
+    width: 100%;
+    height: 8px;
+    background-color: #b5aca6;
+    
+}
+
+/* Background */
+#background{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 95vh;
+    background-size: cover;
+    z-index: -1;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#background::before, #background::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1; 
+}
+
+#background::before {
+    top: 0;
+}
+
+#background::after {
+    bottom: 0;
+}
+
+/* Navbar */
+.navbar {
+    position: relative;
+    z-index: 1;
+}
+
+.container-fluid{
+    margin-top: 10px;
+    margin-left: 80px;
+}
+
+.netflix{
+    width: 183px;
+    height: 105px;
+}
+
+.navbar-brand{
+    margin-top: -38px;
+    margin-left: 69px;
+}
+
+.nav{
+    margin-top: -38px;
+    margin-right: 177px;
+}
+
+/* Dropdown */
+.dropdown-toggle {
+    border: 0.10px solid rgba(199, 193, 193, 0.473);
+    width: 123px;
+    height: 32px;
+    margin-right: 18px;
+    border-radius: 4px;
+    padding-top: 3px;
+    color: white;
+}
+
+.dropdown-toggle:hover{
+    color: white;
+}
+
+.dropdown-item:hover{
+    background-color: blue;
+    color: white;
+}
+
+.dropdown-menu{
+    width: 18px;
+    padding: 0px;
+    margin-left: 1px;
+}
+
+.dropdown-item{
+    display: inline-block;
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+
+.btn-danger {
+    width: 85px;
+    height: 32px;
+    font-size: 15.5px;
+    padding-top: 4px;
+    background-color: red;
+    font-weight: 600;
+}
+
+.dropdown-toggle span{
+    font-size: 13.5px;
+    margin-left: -4.5px;
+    margin-top: 0px;
+    border-bottom: 10px;
+    color: white;
+}
+
+ /* Hero Text */
+.hero-text {
+    z-index: 2;
+    text-align: center;
+    position: absolute;
+    top: 261px;
+    left: 313px;
+    color: rgb(255,255,255);
+}
+
+.hero-text h1{
+    font-size: 48px;
+    font-weight: 800;
+    text-align: center;
+}
+
+.p-txt1{
+    font-size: 25px;
+    margin-top: 19px;
+}
+
+.p-txt2{
+    font-size: 21px;
+    margin-top: 21.5px;
+}
+
+/* Form */
+.email {
+    background-color: rgba(15, 15, 15, 0.66);
+    border-radius: 0.08;
+    width: 394px;
+    padding: 0px;
+}
+
+.email input[type="email"] {
+    background-color: transparent;
+    border: 0.10px solid grey;
+    font-size: 17px;
+    border-radius: 0.08;
+    height: 59px;
+    padding-bottom: 13px;
+}
+
+.email ::placeholder {
+    color: rgba(233, 221, 221, 0.619); 
+    border-radius: 0.08;
+}
+
+/* Get-Started Button */
+.get-started {
+    z-index: 2;
+    font-size: 25px;
+    font-weight: 500;
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 10px 25px;
+    margin-left: 11px;
+    color: white;
+    background-color: red;
+    text-align: center;
+    cursor: pointer;
+    width: 213px;   
+}
+
+.get-started:hover {
+    z-index: 2;
+    background-color: #cb091c;
+    color: white;
+}
+
+/* TV Section */
+.tv{
+    background-color: black;
+    width: 100%;
+    height: 159.5vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.tv h2 {
+    color: white;
+    position: relative;
+    top: 800px; 
+    left: 181px;
+    z-index: 2; 
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 1;
+}
+
+.tv p{
+    position: relative;
+    color: white;
+    display: inline-block;
+    top: 800px; 
+    left: 181px;
+    z-index: 2;
+    font-size: 26px;
+    margin-top: 19px;
+}
+
+.tv span {
+    display: block;
+}
+
+.tv img{
+    position: relative;
+    z-index: 3;
+    float: right;
+    width: 569px;
+    height: 415px;
+    top: 614px; 
+    right: 177px;
+}
+
+.tv video{
+    position: relative;
+    z-index: 2;
+    float: right;
+    width: 618px;
+    height: 232px;
+    top: 587.5px;
+    left: 415px;
+}
+
+.tv-hr{
+    top: 170vh;
+    display: block;
+    position: absolute;
+    z-index: 2;
+    border: none;
+    width: 100%;
+    height: 8px;
+    background-color: #b5aca6;
+}
+
+/* Phone Section */
+.phone{
+    background-color: black;
+    width: 100%;
+    /* height: 157.5vh; */
+    overflow: hidden;
+    position: relative;
+}
+
+.phone h2 {
+    color: white;
+    position: relative;
+    top: 160px; 
+    left: 770px;
+    z-index: 2; 
+    font-size: 48px;
+    margin-right: 780px;
+    font-weight: 800;
+    line-height: 1.3;
+}
+
+.phone p{
+    position: relative;
+    color: white;
+    display: inline-block;
+    top: 148px; 
+    left: 215px;
+    z-index: 2;
+    margin-right: 250px;
+    font-size: 26px;
+    margin-top: 18px;
+    line-height: 1.2;
+}
+
+.phone span {
+    display: block;
+}
+
+.phone img{
+    position: relative;
+    z-index: 2;
+    float: left;
+    height: 415px;
+    bottom: 80px; 
+    left: 192px;
+}
+
+/* Stranger Box */
+.stranger-box {
+    top: 337px;
+    left: 315px;
+    height: 103px;
+    width: 305px;
+    z-index: 2;
+    overflow: hidden;
+    position: absolute;
+    background: rgb(0,0,0);
+    padding: 0.25rem 0.65rem;
+    border: 2px solid rgba(128,128,128,0.7);
+    box-shadow: 0 0 2em 0 rgb(0,0,0);
+    border-radius: 0.75rem;
+    align-items: center;
+}
+
+.stranger-img {
+    margin-left: -192px;
+    position: absolute;
+    margin-top: 4px;
+    padding-bottom: 8px;
+    top: 0;
+    max-width: calc(100% - 3rem);;
+    max-height: 100%;
+}
+
+.stranger-text {
+    flex-grow: 1;
+    flex-shrink: 1;
+    margin: 0.3rem 0;
+}
+
+.stranger-mtext {
+    margin-left: 79px;
+    margin-top: 26px;
+    color: rgb(255,255,255);
+    font-weight: 500;
+    font-size: 16.5px;
+    line-height: 1.1;
+}
+
+.stranger-dtext{
+    margin-left: 79px;
+    font-size: 14.5px;
+    font-weight: 400;
+    color: #0071eb;
+}
+
+.download-arrow {
+    width: 3rem;
+    height: 3rem;
+    outline: 2px solid rgb(0,0,0);
+    outline-offset: -2px;
+    display: block;
+    background: url(https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/download-icon.gif) center center no-repeat;
+    background-size: 100%;
+    content: '';
+    flex-grow: 0;
+    flex-shrink: 0;
+    position: absolute;
+    right: 11px;
+    top: 23px;
+}
+
+.phone-hr{
+    top: 245vh;
+    display: block;
+    position: absolute;
+    z-index: 2;
+    border: none;
+    width: 100%;
+    height: 8px;
+    background-color: #b5aca6;
+}
+
+/* PC Section */
+.pc{
+    background-color: black;
+    width: 100%;
+    height: 77vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.pc h2 {
+    color: white;
+    position: relative;
+    top: 215px; 
+    left: 181px;
+    z-index: 2; 
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 1;
+}
+
+.pc p{
+    position: relative;
+    color: white;
+    display: inline-block;
+    top: 215px;
+    left: 181px;
+    z-index: 2;
+    font-size: 23px;
+    margin-top: 17px;
+    line-height: 1.3;
+}
+
+.pc span {
+    display: block;
+}
+
+.pc img{
+    position: relative;
+    z-index: 3;
+    float: right;
+    width: 574px;
+    height: 415px;
+    top: 16px; 
+    right: 177px;
+}
+
+.pc video {
+    position: relative;
+    z-index: 2;
+    float: right;
+    width: 351px;
+    height: 274px;
+    top: 24px;
+    left: 281px;
+}
+
+.pc-hr{
+    top: 321.4vh;
+    display: block;
+    position: absolute;
+    z-index: 2;
+    border: none;
+    width: 100%;
+    height: 8px;
+    background-color: #b5aca6;
+}
+
+/* Kids Section */
+.kids{
+    background-color: black;
+    width: 100%;
+    height: 79vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.kids h2 {
+    color: white;
+    position: relative;
+    top: 184px; 
+    left: 769px;
+    z-index: 2; 
+    font-size: 48px;
+    margin-right: 780px;
+    font-weight: 800;
+    line-height: 1.3;
+}
+
+.kids p{
+    position: relative;
+    color: white;
+    display: inline-block;
+    top: 175px; 
+    left: 203px;
+    z-index: 2;
+    margin-right: 250px;
+    font-size: 24px;
+    margin-top: 18px;
+    line-height: 1.3;
+}
+
+.kids span {
+    display: block;
+}
+
+.kids img{
+    position: relative;
+    z-index: 2;
+    float: left;
+    height: 425px;
+    bottom: px; 
+    left: 180px;
+}
+
+.kids-hr{
+    top: 400.3vh;
+    display: block;
+    position: absolute;
+    z-index: 2;
+    border: none;
+    width: 100%;
+    height: 8px;
+    background-color: #b5aca6;
+}
