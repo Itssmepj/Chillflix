@@ -647,9 +647,9 @@ body{
     width: 213px;   
 }
 
-.que-get-started:hover {
+.que-get-started:hover, .que-get-started:active {
     z-index: 2;
-    background-color: #cb091c;
+    background-color: rgb(193, 17, 25);
     color: white;
 }
 
