@@ -1088,10 +1088,8 @@
     .hero-text h1 {
         font-size: 2rem;
     }
-
-
 }
-
+/* 
 @media only screen and (min-width: 481px) and (max-width: 768px) {
     #background{
         height: 524px;
@@ -1421,11 +1419,60 @@
         color: #8e8b8b;
         font-weight: 400;
     }
-  }
+  } */
 
+@media only screen and (max-width: 450px) {
+    #background {
+        height: 576px;
+    }
+    
+    .main-hr {
+        top: 35rem;
+    }
 
-/* For mobile phones (320px to 480px) */
-@media only screen and (max-width: 480px) {
+    .chillflix {
+        width: 86px;
+        height: 23px;
+    }
+
+    .hero-text {
+        left: 5vh;
+        top: 151px;
+    }
+
+    .hero-text h1 {
+        width: 22rem;
+    }
+
+    .p-txt1 {
+        margin-left: -42px;
+    }
+
+    .p-txt2 {
+        width: 22rem;
+        margin-top: 14px;
+    }
+
+    .email-row {
+        margin-left: -5px;
+    }
+
+    .email {
+        width: 89%;
+    }
+
+    .email input[type="text"] {
+        height: 48px;
+    }
+
+    .get-started {
+        width: 148px;
+        padding: 10px 0;
+        margin: 15px auto 0 108px;
+    }
+}
+
+/* @media only screen and (min-width: 320px) and (max-width: 480px) {
     #background {
         height: 468px;
     }
@@ -1826,7 +1873,7 @@
         font-weight: 400;
         font-size: 16px;
     }
-}
+} */
 
 
 
